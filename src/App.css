@@ -1,3 +1,277 @@
+@font-face {
+  font-family: Inter;
+  src: url(./Components/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+*{
+  font-family: Inter;
+}
+:root {
+  --limeGreen: hsl(163, 72%, 41%);
+  --brightRed: hsl(356, 69%, 56%);
+  --fb: hsl(208, 92%, 53%);
+  --twitter: hsl(203, 89%, 53%);
+  --instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  --youtube: hsl(348, 97%, 39%);
+
+  --bg: hsl(230, 17%, 14%);
+  --topBgPattern: hsl(232, 19%, 15%);
+  --cardBg: hsl(228, 28%, 20%);
+  --textBlue: hsl(228, 34%, 66%);
+  --textWhite: hsl(0, 0%, 100%);
+  --toggleCircle: hsl(232, 19%, 15%);
+  --cardHover: #333a56;
+  --toggleBtn: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%,55%));
+  --toggleHover: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%,55%));
+}
+[data-theme="light"]{
+  --bg: hsl(0, 0%, 100%);
+  --topBgPattern: hsl(225, 100%, 98%);
+  --cardBg: hsl(227, 47%, 96%);
+  --textBlue: hsl(228, 12%, 44%);
+  --textWhite: hsl(230, 17%, 14%);
+  --toggleCircle: hsl(000, 100%, 100%);
+  --cardHover: #e1e3f0;
+  --toggleBtn: linear-gradient(to right, hsl(230, 22%, 74%), hsl(230, 22%, 74%));
+  --toggleHover: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%,55%));
+}
+
+.limeGreen{
+  color: var(--limeGreen);
+}
+
+.brightRed{
+  color: var(--brightRed)
+}
+/* Header */
+.headTitle{
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--textWhite);
+}
+
+.totFollowers{
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--textBlue);
+}
+
+.hrClass{
+  border-width: 0;
+  border-color: var(--textBlue);
+  
+}
+
+.darkDiv{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+@media screen and (max-width: 575px){
+  .hrClass{
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    margin: 25px 0 14px 0
+  }
+  .darkDiv{
+    justify-content: space-between;
+    margin: 0 0 40px 0;
+  }
+}
+/*  */
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  background-image: var(--toggleBtn);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: var(--toggleCircle);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:hover {
+  /* background-image: var(--toggleHover); */
+}
+
+input:checked + .slider {
+  background-image: var(--toggleBtn);
+}
+
+input:focus + .slider {
+  background-image: var(--toggleBtn);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(24px);
+  -ms-transform: translateX(24px);
+  transform: translateX(24px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*  */
+
+/* Follower Card */
+.cardStyle{
+  background-color: var(--cardBg);
+  border-radius: 4px;
+  border-style: solid;
+  height: 212px;
+  width: 100%;
+}
+
+.cardStyle:hover{
+  cursor: pointer;
+  background-color: var(--cardHover);
+}
+
+.followerNumbers{
+  color: var(--textWhite);
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 52px;
+}
+.followerText{
+  color: var(--textBlue);
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+.followerGain{
+  font-weight: 700;
+  font-size: 12px;
+}
+.cardBorder{
+  border-radius: 4px 4px 0 0;
+  border-width: 0;
+  height: 4px;
+  width: 100%;
+}
+
+.fb{
+  border-top: 4px solid var(--fb);
+}
+.twitter{
+  border-top: 4px solid var(--twitter);
+}
+.insta{
+  border-top: 3px solid;
+  border-image: var(--instagram) 1 0 0 0;
+} 
+.youtube{
+  border-top: 4px solid var(--youtube);
+}
+
+/* Overview */
+
+.overViewCard{
+  background-color: var(--cardBg);
+  height: 125px;
+  width: 100%;
+  border-radius: 4px;
+}
+.pageViews{
+  width: 100%;
+  padding: 29px 29px 0px 22px;
+}
+.gainDiv{
+  width: 100%;
+  padding: 20px 29px 0px 22px;
+}
+.pageViewText{
+  font-size: 14px;
+  color: var(--textBlue);
+  line-height: 14px;
+  font-weight: 700;
+}
+.numberGainText{
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  color: var(--textWhite)
+}
+.perfectText{
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/*  */
+
+body{
+  background-color: var(--bg);
+}
+
+.backgroundTopPat{
+  background-color: var(--topBgPattern);
+  width: 100%;
+  height: 235px;
+  position: absolute;
+  border-radius: 0 0 25px 25px;
+  z-index: -1;
+}
+
+.overviewTitle{
+  font-size: 24px;
+  color: var(--textWhite);
+  line-height: 24px;
+  font-weight: 700;
+  padding-bottom: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .App {
   text-align: center;
 }
