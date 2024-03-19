@@ -121,8 +121,8 @@
   -webkit-transition: .4s;
   transition: .4s;
 }
-.slider:hover {
-  /* background-image: var(--toggleHover); */
+input:hover + .slider:hover {
+  background-image: var(--toggleHover);
 }
 
 input:checked + .slider {
