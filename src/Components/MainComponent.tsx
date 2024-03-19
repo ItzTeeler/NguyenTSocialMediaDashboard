@@ -21,7 +21,7 @@ const MainComponent = () => {
         <FollowerCardComponent border={'youtube'} icon={youtubeIcon} username={'Nathan F.'} followers={'8239'} type={'SUBSCRIBERS'} textColor={"brightRed"} arrow={arrowDown} numGain={'144'}/>
       </div>
 
-      <p className='overviewTitle pl-[25px] pr-[25px] lg:pl-[0px] lg:pr-[0px]'>Overview - Today</p>
+      <p className='overviewTitle pl-[25px] pr-[25px] lg:pl-[0px] lg:pr-[0px] mt-5'>Overview - Today</p>
 
       <div className='pl-[25px] pr-[25px] lg:pl-[0px] lg:pr-[0px] grid md:grid-cols-2 lg:grid-cols-4 gap-x-[30px] gap-y-6'>
         <OverviewCardComponent title={"Page Views"} icon={facebookIcon} number={"87"} textColor={"limeGreen"} arrow={arrowUp} percentNum={"3"}/>
