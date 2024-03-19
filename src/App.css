@@ -195,8 +195,21 @@ input:checked + .slider:before {
   border-top: 4px solid var(--twitter);
 }
 .insta{
-  border-top: 3px solid;
-  border-image: var(--instagram) 1 0 0 0;
+  border-top: 4px solid transparent;
+  background-clip: padding-box;
+  position: relative;
+  box-sizing: border-box;
+}
+.insta::before{
+  position: absolute;
+  top:-4px;
+  bottom: 100px;
+  left: 0px;
+  right: 0px;
+  background: var(--instagram);
+  content: '';
+  z-index: -1;
+  border-radius: 4px;
 } 
 .youtube{
   border-top: 4px solid var(--youtube);
