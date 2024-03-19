@@ -200,7 +200,7 @@ input:checked + .slider:before {
   position: relative;
   box-sizing: border-box;
 }
-.insta::before{
+.insta::after{
   position: absolute;
   top:-4px;
   bottom: 100px;
@@ -222,6 +222,11 @@ input:checked + .slider:before {
   height: 125px;
   width: 100%;
   border-radius: 4px;
+}
+
+.overViewCard:hover{
+  cursor: pointer;
+  background-color: var(--cardHover);
 }
 .pageViews{
   width: 100%;
