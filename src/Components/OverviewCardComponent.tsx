@@ -1,7 +1,7 @@
 import React from 'react'
 import upArrow from './images/icon-up.svg'
 import facebookIcon from './images/icon-facebook.svg'
-const OverviewCardComponent = (props: any) => {
+const OverviewCardComponent = (props: {title: string, icon: string, number: string, arrow: string, textColor: string, percentNum: string}) => {
   return (
     <>
       <div className='overViewCard flex flex-col items-center'>

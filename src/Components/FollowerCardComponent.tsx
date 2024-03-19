@@ -1,5 +1,5 @@
 import React from 'react'
-const FollowerCardComponent = (props: any) => {
+const FollowerCardComponent = (props: {border: string, icon: string, username: string, followers: string, type: string, arrow: string, textColor: string, numGain: string}) => {
     return (
         <>
             <div className={`cardStyle ${props.border}`}>
