@@ -14,16 +14,16 @@ const MainComponent = () => {
     <>
     <HeaderComponent/>
     <div className='px-0 lg:px-[10.625rem]'>
-      <div className='pl-[25px] pr-[25px] lg:pl-[0px] lg:pr-[0px] grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-5 gap-[30px]'>
+      <div className='pl-[25px] pr-[25px] lg:pl-[0px] lg:pr-[0px] grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[30px] pt-0 md:pt-[45px]'>
         <FollowerCardComponent border={'fb'} icon={facebookIcon} username={'@nathanf'} followers={'1987'} type={'FOLLOWERS'} textColor={"limeGreen"} arrow={arrowUp} numGain={'12'}/>
         <FollowerCardComponent border={'twitter'} icon={twitterIcon} username={'@nathanf'} followers={'1044'} type={'FOLLOWERS'} textColor={"limeGreen"} arrow={arrowUp} numGain={'99'}/>
         <FollowerCardComponent border={'insta'} icon={instaIcon} username={'@realnathanf'} followers={'11k'} type={'FOLLOWERS'} textColor={"limeGreen"} arrow={arrowUp} numGain={'1099'}/>
         <FollowerCardComponent border={'youtube'} icon={youtubeIcon} username={'Nathan F.'} followers={'8239'} type={'SUBSCRIBERS'} textColor={"brightRed"} arrow={arrowDown} numGain={'144'}/>
       </div>
 
-      <p className='overviewTitle pl-[25px] pr-[25px] lg:pl-[0px] lg:pr-[0px] mt-5'>Overview - Today</p>
+      <p className='overviewTitle pl-[25px] pr-[25px] lg:pl-[0px] lg:pr-[0px] mt-5 pt-[45px]'>Overview - Today</p>
 
-      <div className='pl-[25px] pr-[25px] lg:pl-[0px] lg:pr-[0px] grid md:grid-cols-2 lg:grid-cols-4 gap-x-[30px] gap-y-6'>
+      <div className='pl-[25px] pr-[25px] lg:pl-[0px] lg:pr-[0px] grid md:grid-cols-2 lg:grid-cols-4 gap-x-[30px] gap-y-6 mb-5'>
         <OverviewCardComponent title={"Page Views"} icon={facebookIcon} number={"87"} textColor={"limeGreen"} arrow={arrowUp} percentNum={"3"}/>
         <OverviewCardComponent title={"Likes"} icon={facebookIcon} number={"52"} textColor={"brightRed"} arrow={arrowDown} percentNum={"2"}/>
         <OverviewCardComponent title={"Likes"} icon={instaIcon} number={"5462"} textColor={"limeGreen"} arrow={arrowUp} percentNum={"2257"}/>

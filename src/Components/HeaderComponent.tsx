@@ -14,7 +14,7 @@ const HeaderComponent = () => {
         <>
             <div className='backgroundTopPat'></div>
             <div className='px-[25px] lg:px-[10.625rem]'>
-                <div className='grid grid-cols-12 pt-5'>
+                <div className='grid grid-cols-12 pt-[35px]'>
                     <div className='col-span-12 md:col-span-8'>
                         <div className='headTitle'>Social Media Dashboard</div>
                         <div className='totFollowers'>Total Followers: 23,004</div>

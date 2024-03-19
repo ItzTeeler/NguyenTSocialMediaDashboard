@@ -10,7 +10,7 @@ const FollowerCardComponent = (props: any) => {
                     </div>
                     <div className='text-center'>
                         <p className='followerNumbers'>{props.followers}</p>
-                        <p className='followerText'>{props.type}</p>
+                        <p className='followerText pt-[10px]'>{props.type}</p>
                     </div>
                     <div className='flex place-items-center'>
                         <img src={props.arrow} alt="up" className='mr-2' /> <span className={`followerGain ${props.textColor}`}>{props.numGain} Today</span>
