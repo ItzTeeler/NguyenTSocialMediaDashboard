@@ -1,3 +1,13 @@
+Name - Tyler Nguyen
+Date - 03-20-2024
+Lab Name - Social Media Dashboard
+Description - This should be a design creation from a picture design. This creation should be a pixel my pixel development using tailwindCSS with React.
+Peer Reviewer - 
+Peer Review -
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
