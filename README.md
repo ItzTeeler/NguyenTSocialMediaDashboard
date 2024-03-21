@@ -2,8 +2,8 @@ Name - Tyler Nguyen
 Date - 03-20-2024
 Lab Name - Social Media Dashboard
 Description - This should be a design creation from a picture design. This creation should be a pixel my pixel development using tailwindCSS with React.
-Peer Reviewer - 
-Peer Review -
+Peer Reviewer - Sebastian Breve-Sanchez
+Peer Review - 3/21/24 - 12:03pm: The website is very similar to the design images. The hover effects work and the dark mode button functions as intended. I quite like how you set up your project and did the dark mode. My only comments are that on the light mode, "Overview - Today" should be a grey and not the 'dark blue' color it currently is, and on the mobile there can be a bit more margin at the bottom. This is kind of up to debate, but on the mobile dark, the first box that says "12 today" is white, not green. I don't know if that would cound or be seen as an error. Good job.
 
 
 
