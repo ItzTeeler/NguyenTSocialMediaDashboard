@@ -19,6 +19,7 @@
   --textBlue: hsl(228, 34%, 66%);
   --textWhite: hsl(0, 0%, 100%);
   --toggleCircle: hsl(232, 19%, 15%);
+  --overviewColor: hsl(0, 0%, 100%);
   --cardHover: #333a56;
   --toggleBtn: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%,55%));
   --toggleHover: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%,55%));
@@ -30,6 +31,7 @@
   --textBlue: hsl(228, 12%, 44%);
   --textWhite: hsl(230, 17%, 14%);
   --toggleCircle: hsl(000, 100%, 100%);
+  --overviewColor: hsl(228, 12%, 44%);
   --cardHover: #e1e3f0;
   --toggleBtn: linear-gradient(to right, hsl(230, 22%, 74%), hsl(230, 22%, 74%));
   --toggleHover: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%,55%));
@@ -270,7 +272,7 @@ body{
 
 .overviewTitle{
   font-size: 24px;
-  color: var(--textWhite);
+  color: var(--overviewColor);
   line-height: 24px;
   font-weight: 700;
   padding-bottom: 22px;

@@ -23,7 +23,7 @@ const MainComponent = () => {
 
       <p className='overviewTitle pl-[25px] pr-[25px] lg:pl-[0px] lg:pr-[0px] mt-5 pt-[45px]'>Overview - Today</p>
 
-      <div className='pl-[25px] pr-[25px] lg:pl-[0px] lg:pr-[0px] grid md:grid-cols-2 lg:grid-cols-4 gap-x-[30px] gap-y-6 mb-5'>
+      <div className='pl-[25px] pr-[25px] lg:pl-[0px] lg:pr-[0px] grid md:grid-cols-2 lg:grid-cols-4 gap-x-[30px] gap-y-6 mb-10'>
         <OverviewCardComponent title={"Page Views"} icon={facebookIcon} number={"87"} textColor={"limeGreen"} arrow={arrowUp} percentNum={"3"}/>
         <OverviewCardComponent title={"Likes"} icon={facebookIcon} number={"52"} textColor={"brightRed"} arrow={arrowDown} percentNum={"2"}/>
         <OverviewCardComponent title={"Likes"} icon={instaIcon} number={"5462"} textColor={"limeGreen"} arrow={arrowUp} percentNum={"2257"}/>
